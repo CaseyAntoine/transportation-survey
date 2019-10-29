@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+ integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+ crossorigin="anonymous"></script>
+
+<!-- styles css -->
+ <link rel="stylesheet" href="css/styles.css">
+
+ <!-- JS  -->
+ <script src="js/scripts.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Transportation Survey</h2>
+      </div>
+      <div class="card bg-info mb-3 survey">
+        <div class="card-header text-white">
+          <h3>How do YOU get around?</h3>
+        </div>
+        <div class="card-body bg-white">
+          <form id="transportation_survey">
+            <div class="form-group">
+              <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
+              <input type="checkbox" name="work-transportation" value="bike"> Riding a bike.<br>
+              <input type="checkbox" name="work-transportation" value="car">Driving a car.<br>
+              <input type="checkbox" name="work-transportation" value="carpool">Carpooling with others.<br>
+              <input type="checkbox" name="work-transportation" value="walk">Walking.<br>
+              <input type="checkbox" name="work-transportation" value="bus">Riding the bus.<br>
+              <input type="checkbox" name="work-transportation" value="train">Riding the train.<br>
+              <input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.<br>
+              <input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.<br>
+              <input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
+              <input type="checkbox" name="work-transportation" value="skateboard">Skateboarding.<br>
+              <input type="checkbox" name="work-transportation" value="rollerblade">Rollerblading.<br>
+              <input type="checkbox" name="work-transportation" value="scooter">Riding a scooter.<br>
+              <input type="checkbox" name="work-transportation" value="other">Another mode of transportation not listed here.<br>
+            </div>
+            <div class="form-group">
+              <p>In the past year, I have used the following modes of transportation to travel to other activities and events:</p>
+              <input type="checkbox" name="fun-transportation" value="bike"> Riding a bike.<br>
+              <input type="checkbox" name="fun-transportation" value="car">Driving a car.<br>
+              <input type="checkbox" name="fun-transportation" value="carpool">Carpooling with others.<br>
+              <input type="checkbox" name="fun-transportation" value="walk">Walking.<br>
+              <input type="checkbox" name="fun-transportation" value="bus">Riding the bus.<br>
+              <input type="checkbox" name="fun-transportation" value="train">Riding the train.<br>
+              <input type="checkbox" name="fun-transportation" value="streetcar">Riding the streetcar.<br>
+              <input type="checkbox" name="fun-transportation" value="taxi">Taking a taxi.<br>
+              <input type="checkbox" name="fun-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
+              <input type="checkbox" name="fun-transportation" value="skateboard">Skateboarding.<br>
+              <input type="checkbox" name="fun-transportation" value="rollerblade">Rollerblading.<br>
+              <input type="checkbox" name="fun-transportation" value="scooter">Riding a scooter.<br>
+              <input type="checkbox" name="fun-transportation" value="other">Another mode of transportation not listed here.<br>
+            </div>
+           <button type="submit" id="submitButton">Submit Survey</button>
+          </form>
+        </div>
+      </div>
+      <div class="card bg-dark mb-3 text-white" id="work-responses">
+        <div class="card-header">
+          <h3>Thanks for taking the survey!</h3>
+        </div>
+        <div class="card-body">
+          <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+          <span class="workInfo"></span>
+          <p><b>You use the following methods of transportation to travel for fun and events:</b></p>
+          <span class="funInfo"></span>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
